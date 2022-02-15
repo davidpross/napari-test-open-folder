@@ -1,0 +1,11 @@
+name: napari-test-open-folder
+display_name: napari test open folder
+contributions:
+  commands:
+    - id: napari-test-open-folder.get_reader
+      python_name: napari_test_open_folder._reader:napari_get_reader
+      title: Open data with napari test open folder
+  readers:
+    - command: napari-test-open-folder.get_reader
+      accepts_directories: true
+      filename_patterns: ['*']
